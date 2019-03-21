@@ -39,7 +39,6 @@ def uploaddata(api,n,*data):
         for z in range(n):
             url+="&field"+str(z+1)+"="+str(data[z])
         data = urlopen(url)
-        print(url)
         data = json.loads(data.read())
         if(data > 0):
             return True
