@@ -16,12 +16,12 @@ To retrive data from thingspeak:
 
 
 To upload data to thingspeak:
-  We have a funcion putdata() which take atleast 3 arguments but able to take as many arguments you gave.
+  We have a funcion uploaddata() which take atleast 3 arguments but able to take as many arguments you gave.
   1st argument is write api key,
   2nd argument is total number of varioius fields,
   rest are the data corresponding to each field.
         Example call:
         Let write api is 123abcdef123, have 2 data fields and data is hello python,
-          then retrivedata('123abcdef123',2,'hello','python') which return only true and false.
+          then uploaddata('123abcdef123',2,'hello','python') which return only true and false.
         Let write api is 123abcdef123, have 3 data fields and data is hello python user,
-          then retrivedata('123abcdef123',3,'hello','python','user') which return only true and false.
+          then uploaddata('123abcdef123',3,'hello','python','user') which return only true and false.
