@@ -1,8 +1,10 @@
 # Thingspeak1
 Provide functions to upload and retrive data to thingspeak server in effective way.
 #python
-To retrive data from thingspeak
-  we have a funcion retrivedata() which take 3 arguments out of which 1 is optional.
+
+
+To retrive data from thingspeak:
+  We have a funcion retrivedata() which take 3 arguments out of which 1 is optional.
   1st argument is Channel ID
   2nd argument is read api ker
   *3rd argument is total number of fields you want to retrive
@@ -13,8 +15,8 @@ To retrive data from thingspeak
 
 
 
-To upload data to thingspeak
-  we have a funcion putdata() which take atleast 3 arguments but able to take as many arguments you gave.
+To upload data to thingspeak:
+  We have a funcion putdata() which take atleast 3 arguments but able to take as many arguments you gave.
   1st argument is write api key
   2nd argument is total number of varioius fields
   rest are the data corresponding to each field
