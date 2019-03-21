@@ -1,13 +1,13 @@
 #getting data from thingspeak
 #=================================
-import json
-from urllib.request import urlopen
 """
 chID  = Channel Id
 api   = read api key
 """
 def retrivedata(chID,api):
     try:
+        import json
+        from urllib.request import urlopen
         data = "https://api.thingspeak.com/channels/"+chID+"/feeds.json?api_key="+api+"&results=1"
         data = urlopen(data)
         data = json.loads(data.read())
@@ -33,6 +33,8 @@ n = total number of fields
 
 def uploaddata(api,n,*data):
     try:
+        import json
+        from urllib.request import urlopen
         url = "https://api.thingspeak.com/update?api_key="+api
         for z in range(n):
             url+="&field"+str(z+1)+"="+str(data[z])
